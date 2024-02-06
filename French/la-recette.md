@@ -43,4 +43,9 @@ Servez accompagné d'une semoule fine.
 
 Aujourd'hui, je vais aller faire couscous poulet et merguez faciles.
 Ce plat doit trente minutes pour préparation et trente-cinq pour cuissin.
+[First], lavez et epluchez les carottes, les navets, et les tomates et les couper en cubes.
+Puis, dans un autocuiseur, versez trois cuilleres a soupe d'huile d'olive.
+Mettez a chauffer et faites-y dorer les pilons de poulet.
+Quand ils sont dores, versez l'equivalent d'un litre d'eau et ajouter les cube de bouillon de boeuf, le concentre de tomate, les carottes, navets et tomates, les epices a couscous et l'harissa.
+Fermez votre autocuiseur et compter 25 mn de cuisson une fois que celui-ci est monte en pression.
 
