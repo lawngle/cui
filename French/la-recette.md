@@ -6,25 +6,29 @@ Temps de Préparation: 30 min
 Temps de Cuissin: 35 min
 
 Ingrédients (pour deux personnes):
-- 133.5g de pois chiches
-- 1 courgette
-- 1.5 carotte
-- 1 tomate
-- 1 cuillère à café de harissa
-- huille d'olive
-- 4 merguez
-- 2.5 pilons de poulet (fermier de préférence)
-- 1 boîte de concentré de tomates
-- 1 coillère à soupe d'épices à couscous
-- 1 cube de bouillon de boeuf
-- 3.5 navets
+- 133.5 (cent trente) g de pois chiches
+- 1 (une) courgette
+- 1.5 (une) carotte
+- 1 (une) tomate
+- 1 (une) cuillère à café de harissa
+- du huile d'olive
+- 4 (quatre) merguez
+- 2.5 (deux) pilons de poulet 
+- 1 (une) boîte de concentré de tomates
+- 1 (une) cuillère à soupe d'épices à couscous
+- 1 (un) cube de bouillon de bœuf
+- 3.5 (trois) navets
 
 # Préparation de la Recette:
 
-Lavez et épluchez les carottes, les navets, et les tomates et les couper en cubes.
+Aujourd'hui, je vais faire couscous poulet et merguez faciles.
 
-Dans un autocuiseur, versez 3 cuillères à soupe d'huile d'olive.
+D'abord, lavez et épluchez les carottes, les navets, et les tomates et les couper en cubes.
+
+Puis, dans un autocuiseur, versez 3 cuillères à soupe d'huile d'olive.
+
 Mettez à chauffer et faites-y dorer les pilons de poulet.
+
 Quand ils sont dorés, versez l'équivalent d'1 litre d'eau et ajouter les cubes de bouillon de boeuf, le concentré de tomate, les carottes, navets et tomates, les épices à couscous et l'harissa.
 
 Fermez votre autocuiseur et compter 25 mn de cuisson une fois que celui-ci est monté en pression.
@@ -37,15 +41,4 @@ Remettez au feu : comptez 10 mn de cuisson une fois votre autocuiseur sous press
 
 Faites cuire vos merguez sur un grill ou à la poêle, mais pas avec les légumes.
 
-Servez accompagné d'une semoule fine.
-
-# La Scripte
-
-Aujourd'hui, je vais aller faire couscous poulet et merguez faciles.
-Ce plat doit trente minutes pour préparation et trente-cinq pour cuissin.
-[First], lavez et epluchez les carottes, les navets, et les tomates et les couper en cubes.
-Puis, dans un autocuiseur, versez trois cuilleres a soupe d'huile d'olive.
-Mettez a chauffer et faites-y dorer les pilons de poulet.
-Quand ils sont dores, versez l'equivalent d'un litre d'eau et ajouter les cube de bouillon de boeuf, le concentre de tomate, les carottes, navets et tomates, les epices a couscous et l'harissa.
-Fermez votre autocuiseur et compter 25 mn de cuisson une fois que celui-ci est monte en pression.
-
+Enfin, servez accompagné d'une semoule fine.

@@ -1,14 +1,19 @@
 # Chem 150
 
-- Exp 4 Lab
 - Exp 4 Lab Report
-- Exp 5 Pre-Lab
+- Exp 5 Lab
 
 # French
 
 - Restaurant Project
-- Final Exam Study
+- Study Grammar
 
 # Physics
 
-- Chapter 3 Lecture
+- Chapter 3B Lecture
+- Study for Midterm
+
+# Misc
+
+- Set up Laptop
+- Research Group
