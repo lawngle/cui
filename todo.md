@@ -1,6 +1,5 @@
 # Chem 150
 
-- Exp 4 Lab Report
 - Exp 5 Lab
 
 # French
@@ -10,8 +9,6 @@
 
 # Physics
 
-- Chapter 3B Lecture
-- Study for Midterm
 
 # Misc
 
