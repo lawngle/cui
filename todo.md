@@ -1,23 +1,29 @@
 # Chem 150
 
-- Exp 5 Prelab + Lab + Report
-- Exp 4 Report Fix
+- Exp 4 Report (Past)
+- Exp 5 Pre-Lab (Past)
+- Exp 5 Report (Saturday)
+
+## Research
+
+- Meet with more research groups
+- Read up on lanthanide and actinide research (Next Week)
 
 # French
 
-- Restaurant Project
-- Study Grammar
-- Home Class 1
-- Lab 4
-- Le Petit Nicolas Movie + Quiz
+- Restaurant Flyer (Friday)
+- Grammar Rules
 
 # Physics
 
-- HW 6
 - Study Previous Chapters
+- HW5 (Past)
+- Lecture CH 4-B (Thursday)
 
 # Misc
 
-- Set up Latex in Vim
-- Meet with more research groups
-- Read up on lanthanide and actinide research
+- FAFSA Application (March 1)
+- Permit Test Study 
+- Trumpet Practice 
+- Choose Classes
+- Odin Project

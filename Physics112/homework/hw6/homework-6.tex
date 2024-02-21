@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Homework 6}
+\author{Physics 112A}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Problem 4.8}
+Show that the interaction energy of two ideal dipoles separated by a displacement \textbf{r} is
+$$ U = \frac{1}{4 \pi \epsilon_0} \frac{1}{r^3} [ \vec{p}_1 \cdot \vec{p}_2 - 3 ( \vec{p}_1 \cdot \hat{r} ) ( \vec{p}_2 \cdot \hat{r} ) ] $$
+Eq. 3.104:
+$$ \vec{E}_{dip} (r) = \frac{1}{4 \pi \epsilon_0} \frac{1}{r^3} [ 3 ( \vec{p} \cdot \hat{r} ) \hat{r} - \vec{p} ] $$
+Prob. 4.7:
+$$ U = - \vec{p} \cdot \vec{E} $$
+
+The interaction energy is the energy from the second dipole $\vec{p}_2$ in the electric field $\vec{E}$ from the first dipole.
+
+\begin{equation*}
+\begin{split}
+	U & = - \vec{p}_2 \cdot \vec{E}_1 \\
+	& = - \vec{p}_2 \cdot \frac{1}{4 \pi \epsilon_0} \frac{1}{r^3} [ 3 ( \vec{p}_1 \cdot \hat{r} ) \hat{r} - \vec{p}_1 ] \\
+	& = - \frac{1}{4 \pi \epsilon_0} \frac{1}{r^3} \vec{p}_2 \cdot [ 3 ( \vec{p}_1 \cdot \hat{r} ) \hat{r} - \vec{p}_1 ] \\
+	& = \boxed{ \frac{1}{4 \pi \epsilon_0} \frac{1}{r^3} [ \vec{p}_2 \cdot \vec{p}_1 - 3 ( \vec{p}_1 \cdot \hat{r} ) ( \vec{p}_2 \cdot \hat{r} ) ] }
+\end{split}
+\end{equation*}
+
+\textbf{Problem 4.10}
+A sphere of radius $R$ carries a polarization
+$$ \vec{P} (r) = k \vec{r} $$
+where $k$ is a constant and \textbf{r} is the vector from the center.
+\newline
+\textbf{(a)}
+Calculate the bound charges $\sigma_b$ and $\rho_b$
+
+\begin{equation*}
+\begin{split}
+	\sigma_b & = \vec{P} \cdot \hat{n} \\
+	& = k \vec{r} \cdot \hat{r} \\
+	& = \boxed{ kR }
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+	\rho_b & = - \nabla \cdot \vec{p} \\
+	& = - ( \frac{1}{r^2} \frac{\partial }{\partial r} [ r^2 k r ] ) \\
+	& = - \frac{1}{r^2} ( 3 r^2 k ) \\
+	& = \boxed { -3k }
+\end{split}
+\end{equation*}
+
+\textbf{(b)}
+Find the field inside and outside the sphere
+
+\begin{equation*}
+\begin{split}
+	E_{in} ( 4 \pi r^2 ) & = \frac{Q}{\epsilon} \\
+	& = \frac{1}{\epsilon} \rho_b V \\
+	& = \frac{1}{\epsilon} ( -3 k ) ( \frac{4}{3} \pi r^3 ) \\
+	E_{in} & = \frac{1}{\epsilon} ( - 4 k \pi r^3 ) ( \frac{1}{4 \pi r^2} ) \\
+	& = \boxed { - \frac{k r}{\epsilon} \hat{r} }
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+	Q & = \rho_b V + \sigma_b A \\
+	& = 0 \\ 
+	\therefore E_{out} & = \boxed { 0 }
+\end{split}
+\end{equation*}
+
+\end{document}
