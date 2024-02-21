@@ -1,0 +1,24 @@
+CONVERGENCY CRITERIA FULFILLED IN CYCLE 36
+
+ energy change  : actual value =  -0.1870E-06 threshold =   0.1000E-05
+ geom. gradient : actual value =   0.1868E-04 threshold =   0.1000E-02
+
+Job ended at   Tue Feb 13 07:35:08 PM PST 2024
+  on machine     model8
+  by user        mteutla
+  in directory   /work/mteutla/metallocene/data/neutral/closed
+  
+job.start file had been created with details about the job type: 
+
+Tue Feb 13 06:01:49 PM PST 2024
+jobex WAS CALLED AS: jobex -ri -c 100
+AN OPTIMIZATION WITH MAX. 100 CYCLES WILL BE PERFORMED
+CONVERGENCY CRITERION FOR TOTAL SCF-ENERGY IS 10**(-6)
+CONVERGENCY CRITERION FOR MAXIMUM NORM OF SCF-ENERGY GRADIENT IS 10**(-3)
+CONVERGENCY CRITERION FOR MAXIMUM NORM OF BASIS SET GRADIENT IS 10**(-3)
+PROCEDURE WILL START WITH A dscf like STEP
+LOAD MODULES WILL BE TAKEN FROM DIRECTORY /modfac/apps/TURBOMOLE/7.5-official/bin/em64t-unknown-linux-gnu
+DSCF  = /modfac/apps/TURBOMOLE/7.5-official/bin/em64t-unknown-linux-gnu/ridft
+GRAD  = /modfac/apps/TURBOMOLE/7.5-official/bin/em64t-unknown-linux-gnu/rdgrad
+STATPT = /modfac/apps/TURBOMOLE/7.5-official/bin/em64t-unknown-linux-gnu/statpt
+
