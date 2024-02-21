@@ -12,7 +12,6 @@
 # French
 
 - Restaurant Flyer (Friday)
-- Grammar Rules
 
 # Physics
 
