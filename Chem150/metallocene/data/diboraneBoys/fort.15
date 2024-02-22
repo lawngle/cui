@@ -1,0 +1,102 @@
+$title
+diborane 
+$symmetry c1
+$redundant    file=coord
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   on
+ redundant  on
+ cartesian  off
+ global     off
+ basis      off
+$atoms
+b  1-2                                                                         \
+   basis =b def2-SVP                                                           \
+   jbas  =b def2-SVP
+h  3-8                                                                         \
+   basis =h def2-SVP                                                           \
+   jbas  =h def2-SVP
+$basis    file=basis
+$scfmo   file=mos
+$scfiterlimit       30
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$dft
+   functional tpssh
+   gridsize   m3
+$scfconv   7
+$ricore      500
+$rij
+$jbas    file=auxbasis
+$rundimensions
+   natoms=8
+   nbf(CAO)=60
+   nbf(AO)=58
+$last step     force
+$last SCF energy change = 0.27931016E-07
+$charge from ridft
+         -0.000 (not to be modified here)
+$dipole from force
+  x    -0.00000000000000    y     0.00000000000000    z     0.00000000000000    a.u.
+   | dipole | =    0.0000000000  debye
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$orbital_max_rnorm 0.41014151460575E-05
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En
+-53.26440543086    -131.6447886917     55.94848294346    -8.899518554662    -.4584721946265     31.78989106666
+$dipgrad    file=dipgrad
+$hessian (projected)    file=hessian
+$vibrational normal modes    file=vib_normal_modes
+$vibrational reduced masses
+   2.6706350568   1.5872609690   2.1400182200   3.1308340884   2.8853979159
+   1.5550305370   1.0084506839   4.1338327948   1.0079700000   1.4869915464
+   1.4053436561   1.1041236848   1.1160636919   1.0079700000   1.1257967935
+   1.1159988241   1.0680694469   1.0349487448   1.1216363799   1.0156193468
+   1.0469830639   1.0568679199   1.1341240392   1.1333525264
+$nvibro       24
+$vibrational spectrum    file=vibspectrum
+$closed shells
+ a       1-8                                    ( 2 )
+$properties
+    trace                              off
+    moments                            off
+    potential                          off
+    cowan-griffin                      off
+    localization                       active
+    population analyses                off
+    plot                               off
+    firstorder                         off
+    fit                                off
+    wfn                                off
+$boys default
+$end

@@ -1,0 +1,24 @@
+CONVERGENCY CRITERIA FULFILLED IN CYCLE 7
+
+ energy change  : actual value =  -0.4622E-06 threshold =   0.1000E-05
+ geom. gradient : actual value =   0.3489E-04 threshold =   0.1000E-02
+
+Job ended at   Wed Feb 7 12:35:13 PST 2024
+  on machine     c-17-40
+  by user        thinhnn
+  in directory   /work/thinhnn/8181227
+  
+job.start file had been created with details about the job type: 
+
+Wed Feb  7 12:35:08 PST 2024
+jobex WAS CALLED AS: jobex -ri -c 150
+AN OPTIMIZATION WITH MAX. 150 CYCLES WILL BE PERFORMED
+CONVERGENCY CRITERION FOR TOTAL SCF-ENERGY IS 10**(-6)
+CONVERGENCY CRITERION FOR MAXIMUM NORM OF SCF-ENERGY GRADIENT IS 10**(-3)
+CONVERGENCY CRITERION FOR MAXIMUM NORM OF BASIS SET GRADIENT IS 10**(-3)
+PROCEDURE WILL START WITH A dscf like STEP
+LOAD MODULES WILL BE TAKEN FROM DIRECTORY /sopt/TURBOMOLE/7.6/bin/em64t-unknown-linux-gnu_smp
+DSCF  = /sopt/TURBOMOLE/7.6/bin/em64t-unknown-linux-gnu_smp/ridft
+GRAD  = /sopt/TURBOMOLE/7.6/bin/em64t-unknown-linux-gnu_smp/rdgrad
+STATPT = /sopt/TURBOMOLE/7.6/bin/em64t-unknown-linux-gnu_smp/statpt
+

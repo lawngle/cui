@@ -1,0 +1,90 @@
+Wed Feb  7 12:35:13 PST 2024
+
+ STATISTICS OUTPUT FOR PROJECT :
+   --->  diborane   <---
+
+ integral neglect threshold       :  0.10E-09
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+ cpu-time for construction of rho     :        0.034 s
+
+ cpu-time elapsed since end of
+ last dp1 matrix construction          :        2.168 s
+  cpu-time for xc part                :        0.652 s
+ wall-time for xc part                :        0.163 s
+
+ cpu-time for construction of rho     :        0.011 s
+
+
+
+ --------------------    1.ITERATION  --------------------
+  cpu-time for ri-coulomb part        :        0.010 s
+ wall-time for ri-coulomb part        :        0.003 s
+
+ number of shell pairs ii,jj included :          141
+ number of integral batches included  :        21881
+
+ cpu-time for exchange part           :        0.133 s
+
+  cpu-time for xc part                :        0.215 s
+ wall-time for xc part                :        0.054 s
+
+
+
+ --------------------    2.ITERATION  --------------------
+  cpu-time for ri-coulomb part        :        0.007 s
+ wall-time for ri-coulomb part        :        0.002 s
+
+ number of shell pairs ii,jj included :          141
+ number of integral batches included  :        21719
+
+ cpu-time for exchange part           :        0.125 s
+
+  cpu-time for xc part                :        0.210 s
+ wall-time for xc part                :        0.052 s
+
+
+
+ --------------------    3.ITERATION  --------------------
+  cpu-time for ri-coulomb part        :        0.004 s
+ wall-time for ri-coulomb part        :        0.001 s
+
+ number of shell pairs ii,jj included :          141
+ number of integral batches included  :        21446
+
+ cpu-time for exchange part           :        0.122 s
+
+  cpu-time for xc part                :        0.203 s
+ wall-time for xc part                :        0.051 s
+
+
+
+ --------------------    4.ITERATION  --------------------
+  cpu-time for ri-coulomb part        :        0.004 s
+ wall-time for ri-coulomb part        :        0.001 s
+
+ number of shell pairs ii,jj included :          141
+ number of integral batches included  :        20938
+
+ cpu-time for exchange part           :        0.108 s
+
+  cpu-time for xc part                :        0.176 s
+ wall-time for xc part                :        0.044 s
+
+ cpu-time for construction of rho     :        0.036 s
+
+
+
+ --------------------    5.ITERATION  --------------------
+  cpu-time for ri-coulomb part        :        0.004 s
+ wall-time for ri-coulomb part        :        0.001 s
+
+ number of shell pairs ii,jj included :          141
+ number of integral batches included  :        21882
+
+ cpu-time for exchange part           :        0.125 s
+
+  cpu-time for xc part                :        0.681 s
+ wall-time for xc part                :        0.170 s
+

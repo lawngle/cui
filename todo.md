@@ -1,8 +1,8 @@
 # Chem 150
 
-- Exp 4 Report (Past)
-- Exp 5 Pre-Lab (Past)
+- Exp 4 Report (Thinh is revising)
 - Exp 5 Report (Saturday)
+- Revise Exp 6 Pre-Lab (Wednesday)
 
 ## Research
 
