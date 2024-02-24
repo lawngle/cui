@@ -12,53 +12,101 @@
 \section{Abstract} % Last
 
 \section{Introduction} % Third
-The valence electrons on lanthanide and actinide cations were thought to not participate in bonding due to the limited radial extent of the $f$-orbitals.
-However, recent studies in Ln$^{2+}$ complexes revealed that lignad field splitting can lower the energy of $d$-orbitals and lead to the formation of bimetallic lanthanide and actinide complexes.
-The aim of this experiment is to investigate the possibility of Y-Y bonding in the recently synthesized bimetallic complex [(Cp)$_2$Y($\mu - $H)]$_2$. \\
+The valence electrons on lanthanide and actinide cations were thought to not
+participate in bonding due to the limited radial extent of the $f$-orbitals.
+However, recent studies in Ln$^{2+}$ complexes revealed that lignad field
+splitting can lower the energy of $d$-orbitals and lead to the formation of
+bimetallic lanthanide and actinide complexes.  The aim of this experiment is to
+investigate the possibility of Y-Y bonding in the recently synthesized
+bimetallic complex [(Cp)$_2$Y($\mu - $H)]$_2$. \\
 % Introduce the works used related to this experiment.
 
 \section{Methods} % Start Here
 \subsection{Statement of the Models} % Need to check template
 % Insert model of 4f and 5d radial distribution functions
-In a lanthanide, the 4$f$ orbitals are much closer to the nuclei compared to the 5d orbital. % Need to fact check this.
-Electrons removed fom the system will come from the 5$d$ atomic orbital first, increasing the energy of the orbital while not affecting the 4$f$ atomic orbital as much. 
-As the oxidation state increaes, the energy separation between the two orbitals decreases. \\
-Orbital localization is expected to have no effect on the total energy of a molecule, nor the molecular structure.
-The orbital energies are expected to increase when localization is applied.
+In a lanthanide, the 4$f$ orbitals are much closer to the nuclei compared to the
+5d orbital. % Need to fact check this.
+Electrons removed fom the system will come from the 5$d$ atomic orbital first,
+increasing the energy of the orbital while not affecting the 4$f$ atomic orbital
+as much.  As the oxidation state increaes, the energy separation between the two
+orbitals decreases. \\ Orbital localization is expected to have no effect on the
+total energy of a molecule, nor the molecular structure.  The orbital energies
+are expected to increase when localization is applied.
 % Expectation of orbital localization being applied to a hypovalent compound
 
 \subsection{Computational Details}
-A DFT calculation was performed on B$_2$H$_6$ using the TPSSh functional and def2-SVP basis sets.
-The diborane molecule was assigned D$_{2h}$ symmetry.
-The canonical Kohn-Sham molecular orbitals were then plotted and assigned. %according to what
-The diborane symmetry was then lowered to C$_1$ and Boys localization was performed.
-The resulting molecular orbitals were then plotted and assigned as well.
+% Please include any non-default parameters you guys set :3
+A DFT calculation was performed on B$_2$H$_6$ using the TPSSh functional and
+def2-SVP basis sets.  The diborane molecule was assigned D$_{2h}$ symmetry.
+Boys localization was performed after lowering to $C_1$ symmetry.  The canonical
+Kohn-Sham molecular orbitals and Boys localized orbitals were plotted.
 
-% Include assignment 5.1 computational details please
-Ground state optimizations of [(Cp)$_2$Y($\mu - $H)]$_2$ and its monoanion were performed at the TPSSh level using def2-SVP basis sets.
-Solvation of the complexes in THF was simulated with a dielectric constant of $7.58$. 
-The HOMO-LUMO gaps of different spin states were analyzed to determine which one the molecule would be in.
-The spin states of the complexes was used to determine whether the complex would be EPR active.
-Frontier orbitals were visualized to deterime whether metal-metal bonding was observe
+Ground state optimizations of [(Cp)$_2$Y($\mu - $H)]$_2$ and its monoanion were
+performed at the TPSSh level using def2-SVP basis sets.  Solvation of the
+complexes in THF was simulated with a dielectric constant of $7.58$.  The
+HOMO-LUMO gaps of different spin states were analyzed to determine which one the
+molecule would be in.  The spin states of the complexes was used to determine
+whether the complex would be EPR active.  Frontier orbitals were visualized to
+deterime whether metal-metal bonding was observe
 % Compare diborane and lanthanide units later.
 
 \section{Results and Discussion} % Second
 
+\begin{table}[htbp]
+    \centering
+    \caption{}
+    \begin{tabular}{c|ccc|ccc}
+	    & \multicolumn{3}{c}{Canonical} & \multicolumn{3}{c}{Localized} \\
+	Orbital & Assignment & Energy (eV) & Visualization & Assignment & Energy (eV) & Visualization \\
+	    \hline
+      HOMO (1b2g)   &  $\pi^*_{\mathrm{p-p}}$     &   -8.514      &
+	    &  $\sigma^*_{\mathrm{s-p}}$  &  -10.726  \\
+      HOMO-1 (3ag)  &  $\sigma_{\mathrm{p-p}}$    &   -9.867      &
+	    &  $\sigma^*_{\mathrm{s-p}}$  &  -10.726  \\
+      HOMO-2 (1b3u) &  $\pi_{\mathrm{p-p}}$       &  -10.156      &
+	    &  $\sigma^*_{\mathrm{s-p}}$  &  -10.726  \\
+      HOMO-3 (1b2u) &  $\pi_{\mathrm{p-p}}$       &  -11.516      &
+	    &  $\sigma^*_{\mathrm{s-p}}$  &  -10.726  \\
+      HOMO-4 (2b1u) &  $\sigma^*_{\mathrm{s-s}}$  &  -12.067      &
+	    &  $\sigma^*_{\mathrm{s-p}}$  &  -13.927  \\
+      HOMO-5 (2ag)  &  $\sigma_{\mathrm{s-s}}$    &  -17.747      &
+	    &  $\sigma^*_{\mathrm{s-p}}$  &  -13.927  
+    \end{tabular}
+\end{table}
+
 % Include assignmen 5.1 results please
-The HOMO-LUMO gap of the neutral singlet complex is +4.29684 eV, whereas the neutral triplet complex yielded a negative gap.
-A doublet state was the only reasonable spin state for the monoanion complex without exciting the electron.
-The closed shell spin state of the neutral complex makes it EPR inactive, whereas the lone electron on the monoanion makes it EPR active.
-The bond length between the metal centers in the complex were determined to be 354.55pm and 346.19pm for the neutral and monoanion complex, respectively.
-This corresponds to a 0.724\% error in the neutral complex and a 0.344\% error in the monoanion complex when compared to ().
-% Insert image of frontier orbitals
-The frontier orbitals of the monoanion complex suggest metal-metal bonding. % Go intodetail about why.
-% Suggest minimal molecular orbital later
+The HOMO-LUMO gap of the neutral singlet complex was +4.29684 eV, whereas the
+neutral triplet complex yielded a negative gap.  A doublet state was the only
+reasonable spin state for the monoanion complex without exciting the electron.
+The doublet state had a smaller HOMO-LUMO gap than the neutral closed-shell
+complex of +0.74691 eV, and the excited quartet state also had a negative gap.
+The closed shell spin state of the neutral complex makes it EPR inactive,
+whereas the lone electron on the monoanion makes it EPR active.  The bond length
+between the metal centers in the complex were determined to be 354.55pm and
+346.19pm for the neutral and monoanion complex, respectively.  This corresponds
+to a 0.724\% error and a 0.344\% error respectively when compared to Dumas et
+al. \cite{dumas}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{../images/lanthanide/merged.jpg}
+\end{figure}
+
+% Suggest minimal molecular orbital later.
 
 \section{Conclusions} % Fourth
 
+\begin{thebibliography}{80}
+	\bibitem{dumas} Megan T. Dumas et al. “Synthesis and reductive
+		chemistry of bimetallic and trimetallic rare- 2 earth
+		metallocene hydrides with (C5H4SiMe3)1- ligands”. In: J.
+		Organomet. Chem. 849-850 3 (2017), pp.  38–47. doi:
+		10.1016/j.jorganchem.2017.05.057.
+\end{thebibliography}
+
 \section*{Appendix}
 \begin{tabular}{cc}
-	 & HOMO-LUMO Gap (eV) \\
+	Structure & HOMO-LUMO Gap (eV) \\
 	Anion & $+0.74691$ \\
 	Neutral Singlet & $+4.29684$ \\
 	Neutral Triplet & $-2.38537$ \\
@@ -66,7 +114,7 @@ The frontier orbitals of the monoanion complex suggest metal-metal bonding. % Go
 \end{tabular}
 
 \begin{tabular}{cc}
-	 & Y-Y Distance (pm) \\
+	Structure & Y-Y Distance (pm) \\
 	Neutral & $354.55$ \\
 	Neutral Exp & $352$ \\
 	Anion & $347.19$ \\
