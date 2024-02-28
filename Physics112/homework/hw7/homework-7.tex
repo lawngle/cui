@@ -14,13 +14,94 @@ Calculate the potential of a uniformly polarized sphere (Ex. 4.2) directly from
 Eq. 4.9. \\
 
 Equation 4.9:
-$$V(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int_{\nu} \frac{\vec{P}(\vec{r^\prime}) \cdot \hat{r}}{r^2} d\tau^\prime  $$
+$$ V(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int_V \frac{\vec{P}(\vec{r^\prime}) \cdot \hat{r}}{r^2} d\tau^\prime  $$
 
 \begin{equation*}
 \begin{split}
-	V(\vec{r}) & = \frac{1}{4 \pi \epsilon_0} \int_{\nu} \frac{\vec{P}(\vec{r^\prime}) \cdot \hat{r}}{r^2} d\tau^\prime \\
-	& = \frac{2 \pi P}{4 \pi \epsilon_0} \int \int \frac{cos \theta}{r^2} r^2 sin \theta dr d\theta
+	V(\vec{r}) & = \frac{1}{4 \pi \epsilon_0} \int_V \frac{\vec{P}(\vec{r^\prime}) \cdot \hat{r}}{r^2} d\tau^\prime \\
+	& = \vec{P} \frac{1}{4 \pi \epsilon_0} \int_V \frac{\hat{r}}{r^2} d\tau^\prime \\
+	& = \vec{P} \frac{E}{\rho} \hat{r} \\
 \end{split}
 \end{equation*}
+
+When $r < R$:
+\begin{equation*}
+\begin{split}
+	E_{in} & = \frac{\rho \frac{4}{3} \pi r^3}{4 \pi r^2 \epsilon_0} \\
+	V_{in} & = \vec{P} \frac{r}{3 \epsilon_0} \hat{r} \\
+	& = \boxed{\vec{P} \frac{r}{3 \epsilon_0} cos\theta}
+\end{split}
+\end{equation*}
+
+When $r > R$:
+\begin{equation*}
+\begin{split}
+	E_{out} & = \frac{\rho \frac{4}{3} \pi R^3}{4 \pi r^2 \epsilon_0} \\
+	V_{out} & = \vec{P} \frac{R^3}{3 \epsilon_0 r^2} \hat{r} \\
+	& = \boxed{\vec{P} \frac{R^3}{3 \epsilon_0 r^2} cos\theta}
+\end{split}
+\end{equation*}
+
+% -----
+\textbf{Problem 4.15}
+A thick spherical shell (inner radius $a$, outer radius $b$) is made of dielectric material with a "frozen-in" polarization
+$$ \vec{P} (\vec{r}) = \frac{k}{r} \hat{r} $$
+where $k$ is a constant and $\vec{r}$ is the distance from the center.
+(There is no free charge in the problem.)
+Find the electric field in all three regions by two different methods:
+
+\textbf{(a)}
+Locate all the bound charge, and use Gauss' Law (Eq. 2.13) to calculate the field it produces.
+
+\textbf{(b)}
+Use Eq. 4.23 to fin $D$, and then get $E$ from Eq. 4.21.
+
+% -----
+\textbf{Problem 4.20}
+A sphere of linear dielectric material has embedded in it a uniform free charge density $\rho$.
+Find the potential at the center of the sphere (relative to infinity), if its radius is $R$ and the dielectric constant is $\epsilon_r$.
+
+% -----
+\textbf{Problem 4.21}
+A certain coaxial cable consists of a copper wire, radius $a$, surrounded by a concentric copper tube of inner radius $c$.
+The space between is partially filled (from $b$ out to $c$) with material of dielectric constant $\epsilon_r$, as shown.
+Find the capacitance per unit length of this cable.
+
+% -----
+\textbf{Problem 4.24}
+An uncharged conducting sphere of radius $a$ is coated with a thick insulating shell (dielectric consant $\epsilon_r$) out to radius $b$.
+This object is now placed in an otherwise uniform electric field $E_0$.
+Find the electric field in the insulator.
+
+% -----
+\textbf{Problem 5.3}
+In 1897, J. J. Thomson "discovered" the electron by measuring the charge-to-mass ratio of "cathode rays" (with charge $q$ and mass $m$) as follows:
+
+\textbf{(a)}
+First he passed the beam through uniform crossed electric and magnetic field $E$ and $B$ (mutually perpendicular, and both of them perpendicular to the beam), and adjusted the electric field until he got zero deflection.
+What, then, was the speed of the particles (in terms of $E$ and $B$) ?
+
+\textbf{(b)}
+Then he turned off the electric field, and measured the radius of curvature, $R$, of the beam, as deflected by the magnetic field alone.
+In terms of $E$, $B$, $R$, what is the charge-to-mass ratio ($\frac{q}{m}$) of the particles ?
+
+% -----
+\textbf{Problem 5.6}
+
+\textbf{(a)}
+A phonograph record carries a uniform density of "static electricity" $\sigma$.
+If it rotates at angular velocity $\omega$, what is the surface current density $K$ at a distance $r$ from the center ?
+
+\textbf{(b)}
+A uniformly charged solid sphere, of radius $R$ and total charge $Q$, is centered at the origin and spinning at a constant angular velocity $\omega$ about the z-axis.
+Find the current density $J$ at any point ($r, \theta, \phi$) within the sphere.
+
+% -----
+\textbf{Problem 5.7}
+For a configuration of charges and currents confined within a volume $V$, show that
+$$ \int_V J d\tau = \frac{d\vec{p}}{dt} $$
+where $\vec{p}$ is the total dipole moment.
+[Hint: Evaluate $\int_V \nabla \cdot (xJ) d\tau$.]
+
 
 \end{document}
