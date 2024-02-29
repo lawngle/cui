@@ -53,25 +53,215 @@ Find the electric field in all three regions by two different methods:
 \textbf{(a)}
 Locate all the bound charge, and use Gauss' Law (Eq. 2.13) to calculate the field it produces.
 
+\begin{equation*}
+\begin{split}
+	\rho_b & = - \nabla \cdot \vec{P} \\
+	& = - \frac{1}{r^2} \frac{\partial}{\partial r} [r^2 \frac{k}{r}] \\
+	& = - \frac{k}{r^2} \\
+	\sigma_b & = \vec{P} \cdot \hat{n} \\
+	& = \frac{k}{r}
+\end{split}
+\end{equation*}
+
+When $r = a$, $\sigma_b = - \frac{k}{a}$ \\
+
+When $r = b$, $\sigma_b = \frac{k}{b}$ \\
+
+When $r < a$ or $r > b$:
+$$E = \boxed{0}$$
+
+When $a < r < b$:
+\begin{equation*}
+\begin{split}
+	Q & = \sigma_b A + \int \rho_b dV \\
+	& = - \frac{k}{a} 4 \pi a^2 + \int_a^r - \frac{k}{r^2} 4 \pi r^2 dr \\
+	& = - 4 k \pi a - 4 k \pi [r]^r_a \\
+	& = - 4 k \pi r \\
+	E & = \frac{- 4 k \pi r}{4 \pi r^2 \epsilon_0} \hat{r} \\
+	& = \boxed{- \frac{k}{\epsilon_0 r} \hat{r}}
+\end{split}
+\end{equation*}
+
 \textbf{(b)}
-Use Eq. 4.23 to fin $D$, and then get $E$ from Eq. 4.21.
+Use Eq. 4.23 to find $D$, and then get $E$ from Eq. 4.21. \\
+
+When $r < a$ or $r > b$, there is no bound charge and no polarization, thus $E = \boxed{0}$ \\
+
+When $a < r < b$, there is no free charge, thus $\vec{D} = 0$:
+\begin{equation*}
+\begin{split}
+	E & = - \frac{1}{\epsilon_0} \vec{P} \\
+	& = \boxed{- \frac{k}{\epsilon_0 r} \hat{r}}
+\end{split}
+\end{equation*}
 
 % -----
 \textbf{Problem 4.20}
 A sphere of linear dielectric material has embedded in it a uniform free charge density $\rho$.
 Find the potential at the center of the sphere (relative to infinity), if its radius is $R$ and the dielectric constant is $\epsilon_r$.
 
+$$\int \vec{D} \cdot d\vec{a} = Q$$
+$$E = \frac{D}{\epsilon_r}$$
+
+When $r < R$:
+\begin{equation*}
+\begin{split}
+	D & = \frac{\rho \frac{4}{3} \pi r^3}{4 \pi r^2} \\ % inside sphere
+	& = \frac{\rho r}{3} \\
+	E & = \frac{\rho r}{3 \epsilon}
+\end{split}
+\end{equation*}
+
+When $r > R$:
+\begin{equation*}
+\begin{split}
+	D & = \frac{\rho \frac{4}{3} \pi R^3}{4 \pi r^2} \\ % outside sphere
+	& = \frac{\rho R^3}{3 r^2} \\
+	E & = \frac{\rho R^3}{3 \epsilon_0 r^2}
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+	V(0) & = - \int_{\infty}^R E dr - \int_R^0 E dr \\
+	& = - \int_{\infty}^R \frac{\rho R^3}{3 \epsilon_0 r^2} dr - \int_R^0 \frac{\rho r}{3 \epsilon} dr \\
+	& = \frac{\rho R^3}{3 \epsilon_0} [\frac{1}{r}]_{\infty}^R - \frac{\rho}{3 \epsilon} [\frac{1}{2} r^2]_R^0 \\
+	& = \frac{\rho R^2}{3} (\frac{1}{\epsilon_0} + \frac{1}{2 \epsilon_0 \epsilon_r}) \\
+	& = \boxed{\frac{\rho R^2}{3 \epsilon_0} (1 + \frac{1}{2 \epsilon_r})}
+\end{split}
+\end{equation*}
+
 % -----
 \textbf{Problem 4.21}
 A certain coaxial cable consists of a copper wire, radius $a$, surrounded by a concentric copper tube of inner radius $c$.
 The space between is partially filled (from $b$ out to $c$) with material of dielectric constant $\epsilon_r$, as shown.
-Find the capacitance per unit length of this cable.
+Find the capacitance per unit length of this cable. \\
+
+When $r < a$:
+$$E = 0$$ 
+When $a < r < b$:
+\begin{equation*}
+\begin{split}
+	E & = \frac{Q}{\epsilon_0 A} \\
+	& = \frac{Q}{2 \pi \epsilon_0 s L}
+\end{split}
+\end{equation*}
+
+When $b < r < c$:
+\begin{equation*}
+\begin{split}
+	D & = \frac{Q}{2 \pi s L} \\
+	E & = \frac{Q}{2 \pi \epsilon s L}
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+	V & = - \int_c^b E ds - \int_b^a E ds \\
+	& = - \int_c^b \frac{Q}{2 \pi \epsilon s L} ds - \int_b^a \frac{Q}{2 \pi \epsilon_0 s L} ds \\
+	& = \frac{Q}{2 \pi \epsilon L} [ln(s)]_c^b + \frac{Q}{2 \pi \epsilon_0} [ln(s)]_b^a \\
+	& = \frac{Q}{2 \pi \epsilon_0 L} [ln(\frac{b}{c}) + \frac{1}{\epsilon_r} ln(\frac{a}{b})] \\
+	\frac{C}{L} & = \frac{Q}{V L} \\
+	& = \boxed{2 \pi \epsilon_0 [\frac{1}{\epsilon_r} ln(\frac{b}{c}) + ln(\frac{a}{b})]^{-1}}
+\end{split}
+\end{equation*}
 
 % -----
 \textbf{Problem 4.24}
 An uncharged conducting sphere of radius $a$ is coated with a thick insulating shell (dielectric consant $\epsilon_r$) out to radius $b$.
 This object is now placed in an otherwise uniform electric field $E_0$.
 Find the electric field in the insulator.
+
+Boundary Conditions:
+\begin{itemize}
+	\item $V_{out} = V_b$ when $r = b$
+	\item $\epsilon \frac{\partial}{\partial r} V_{b} = \epsilon_0 \frac{\partial}{\partial r} V_{out}$ when $r = b$
+	\item $V_b = 0$ when $r = a$
+	\item $V_{out} \rightarrow -E_0 r cos\theta$ when $r >> b$
+\end{itemize}
+
+General Solution:
+$$V(r, \theta) = \sum_{l = 0}^{\infty} (A_l r^l + B_l r^{-(l+1)}) P_l (cos\theta)$$
+
+\textbf{BC 4}
+\begin{equation*}
+\begin{split}
+	V_{out} & = - E_0 r cos\theta + \sum_{l = 0}^{\infty} (A_l r^l + B_l r^{-(l+1)}) P_l (cos\theta) \\
+	& = - E_0 r cos\theta + \sum_{l = 0}^{\infty} B_l r^{-(l+1)} P_l (cos\theta)
+\end{split}
+\end{equation*}
+
+\textbf{BC 3}
+\begin{equation*}
+\begin{split}
+	0 & = \sum_{l = 0}^{\infty} (A_l a^l + B_l a^{-(l+1)}) P_l (cos\theta) \\
+	B_l a^{-(l+1)} & = - A_l a^l \\
+	B_l & = - A_l a^{2l+1}
+\end{split}
+\end{equation*}
+
+\textbf{BC 1}
+\begin{equation*}
+\begin{split}
+	- E_0 b cos\theta + \sum_{l=0}^{\infty} B_l b^{-(l+1)} P_l (cos\theta) & = \sum_{l=0}^{\infty} (A_l b^l - A_l a^{2l+1} b^{-(l+1)}) P_l (cos\theta) \\
+	& = \sum_{l=0}^{\infty} A_l (b^l - a^{2l+1} b^{-(l+1)}) P_l (cos\theta) \\
+	- E_0 b \int cos\theta P_{l^\prime} (cos\theta) d(cos\theta) + B_l b^{-(l+1)} \frac{2}{2l+1} & = A_l (b^l - a^{2l+1} b^{-(l+1)}) \frac{2}{2l+1} \\
+\end{split}
+\end{equation*}
+
+When $l = 1$:
+\begin{equation*}
+\begin{split}
+	B_1 b^{-2} - E_0 b & = A_1 (b - a^3 b^{-2}) \\
+	B_1 - E_0 b^3 & = A_1 (b^3 - a^3)
+\end{split}
+\end{equation*}
+
+Else:
+$$B_l b^{-(l+1)} = A_l (b^l - a^{2l+1} b^{-(l+1)})$$ 
+
+\textbf{BC 2}
+\begin{equation*}
+\begin{split}
+	\epsilon_r \sum_{l=0}^{\infty}[l A_l b^{l-1} - (l+1) B_l b^{-(l+2)}] P_l (cos\theta) & = - E_0 cos\theta - \sum_{l=0}^{\infty} (l+1) B_l b^{-(l+2)} P_l (cos\theta) \\
+	\epsilon_r [l A_l b^{l-1} - (l+1) B_l b^{-(l+2)}] \frac{2}{2l+1} & = - E_0 \int cos\theta P_{l^\prime} (cos\theta) d(cos\theta) - (l+1) B_l b^{-(l+2)} \frac{2}{2l+1}
+\end{split}
+\end{equation*}
+
+When $l = 1$:
+\begin{equation*}
+\begin{split}
+	\epsilon_r [A_1 - 2 B_1 b^{-3}] & = -E_0 - 2 B_1 b^{-3} \\
+	\epsilon_r [A_1 - 2 A_1 \frac{a^3}{b^3}] & = -E_0 - 2 B_1 b^{-3} \\
+	- 2 B_1 - E_0 b^3 7 = \epsilon_r A_1 (b^3 + 2a^3)
+\end{split}
+\end{equation*}
+
+Else:
+\begin{equation*}
+\begin{split}
+	\epsilon_r [l A_l b^{l-1} + (l+1) A_1 \frac{a^{2l+1}}{b^{l+2}} & = -(l+1) B_l b^{-(l+2)} \\
+	B_1 & = - \epsilon_r A_l [\frac{l}{l+1} b^{2l+1} + a^{2l+1}
+\end{split}
+\end{equation*}
+
+From BC1 and BC2:
+$$A_l = B_l = 0$$
+
+\begin{equation*}
+\begin{split}
+	- 3 E_0 b^3 & = A_1 [2(b^3 - a^3) + \epsilon_r (b^3 + 2a^3)] \\
+	A_1 & = \frac{- 3 E_0}{2(b^3 - a^3) + \epsilon_r (b^3 + 2a^3)} \\
+	V_b & = \frac{- 3 E_0}{2(b^3 - a^3) + \epsilon_r (b^3 + 2a^3)} (r - \frac{a^3}{r^2}) cos\theta
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+	E & = - \nabla V_b \\
+	& = \boxed{\frac{- 3 E_0}{2(b^3 - a^3) + \epsilon_r (b^3 + 2a^3)} [(1 + \frac{2a^3}{r^3})cos\theta \hat{r} - (1-\frac{a^3}{r^3})sin\theta \hat{\theta}]}
+\end{split}
+\end{equation*}
 
 % -----
 \textbf{Problem 5.3}
@@ -81,9 +271,24 @@ In 1897, J. J. Thomson "discovered" the electron by measuring the charge-to-mass
 First he passed the beam through uniform crossed electric and magnetic field $E$ and $B$ (mutually perpendicular, and both of them perpendicular to the beam), and adjusted the electric field until he got zero deflection.
 What, then, was the speed of the particles (in terms of $E$ and $B$) ?
 
+\begin{equation*}
+\begin{split}
+	0 & = Q (E + vB) \\
+	v & = \boxed{- \frac{E}{B}}
+\end{split}
+\end{equation*}
+
 \textbf{(b)}
 Then he turned off the electric field, and measured the radius of curvature, $R$, of the beam, as deflected by the magnetic field alone.
 In terms of $E$, $B$, $R$, what is the charge-to-mass ratio ($\frac{q}{m}$) of the particles ?
+
+\begin{equation*}
+\begin{split}
+	QvB & = m \frac{v^2}{R} \\
+	\frac{Q}{m} & = - \frac{E}{B} \frac{1}{B R} \\
+	& = \boxed{\frac{E}{B^2 R}}
+\end{split}
+\end{equation*}
 
 % -----
 \textbf{Problem 5.6}
@@ -92,16 +297,24 @@ In terms of $E$, $B$, $R$, what is the charge-to-mass ratio ($\frac{q}{m}$) of t
 A phonograph record carries a uniform density of "static electricity" $\sigma$.
 If it rotates at angular velocity $\omega$, what is the surface current density $K$ at a distance $r$ from the center ?
 
+\begin{equation*}
+\begin{split}
+	K & = \sigma v \\
+	& = \boxed{\sigma r \omega}
+\end{split}
+\end{equation*}
+
+
 \textbf{(b)}
 A uniformly charged solid sphere, of radius $R$ and total charge $Q$, is centered at the origin and spinning at a constant angular velocity $\omega$ about the z-axis.
 Find the current density $J$ at any point ($r, \theta, \phi$) within the sphere.
 
-% -----
-\textbf{Problem 5.7}
-For a configuration of charges and currents confined within a volume $V$, show that
-$$ \int_V J d\tau = \frac{d\vec{p}}{dt} $$
-where $\vec{p}$ is the total dipole moment.
-[Hint: Evaluate $\int_V \nabla \cdot (xJ) d\tau$.]
-
+\begin{equation*}
+\begin{split}
+	J (r, \theta, \phi) & = \rho v \\
+	& = \frac{Q}{\frac{4}{3} \pi r^3} r sin\theta \omega \\
+	& = \boxed{\frac{3 Q \omega}{4 \pi r^2} sin\theta}
+\end{split}
+\end{equation*}
 
 \end{document}
