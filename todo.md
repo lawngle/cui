@@ -1,31 +1,22 @@
 # Chem 150
 
-- Exp 4 Report (Thinh is revising)
-- Exp 5 Report (Today)
-- Revise Exp 6 Pre-Lab (Tuesday)
-
-## Research
-
-- Meet with more research groups
-- Read up on lanthanide and actinide research (Next Week)
+- Exp 6
 
 # French
 
-- Restaurant Flyer (Monday)
-- Lab 5 (Sunday)
-- Les Choristes Discussion (Sunday)
-- Oral Interview Instructions & Questions (Sunday) 
+- Oral Interview Instructions & Questions
+- Study Restaurant Script (Friday)
 
 # Physics
 
 - Study Previous Chapters
 - HW5 (Past)
-- Lecture CH 4-B (Thursday)
-- HW 7
+- Lecture
+- HW 8
 
 # Misc
 
 - Permit Test Study 
 - Trumpet Practice 
-- Choose Classes (Monday)
+- Email Genesis to enroll into Physics 113
 - Odin Project
