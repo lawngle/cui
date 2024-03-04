@@ -11,12 +11,10 @@
 
 - Study Previous Chapters
 - HW5 (Past)
-- Lecture
 - HW 8
 
 # Misc
 
 - Permit Test Study 
 - Trumpet Practice 
-- Email Genesis to enroll into Physics 113
 - Odin Project
