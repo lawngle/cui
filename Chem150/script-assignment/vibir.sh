@@ -33,5 +33,10 @@ while :; do
 done
 
 
-# Collect frequency and IR intensity lines
-awk '/frequency\ \ /{print; nr[NR+6]; next}; NR in nr' force.out
+awk '
+BEGIN {print "Vibrational Frequency  IR Intensity"}
+{
+	
+}
+END {}' force.out
+# END {print; nr[NR+6]; next}; NR in nr' force.out
