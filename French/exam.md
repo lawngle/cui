@@ -19,7 +19,7 @@ Pour le dejeuner, je prends une salade.
 Pour le diner, je prends de la viande avec du riz.
 
 **Qu'est-ce que tu manges d'habitude ?**
-D'habitude, je mange des fruits, des legumes, [...]
+D'habitude, je mange des salades, de la viande, et des oeufs.
 
 **Quels cours est-ce que tu suis ?**
 J'ai des cours de chimie, physique, et francais.

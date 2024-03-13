@@ -5,13 +5,14 @@
 help() {
 	echo "Usage: vibir [OPTION]..."
 	echo
-	echo " -h, --help	Display this help message"
-	echo " -v, --verbose	Enable debug output"
-	echo " -o, --output	Specify output file (doesn't work yet)"
+	echo " -h, --help		Display this help message"
+	echo " -v, --verbose		Enable debug output"
+	echo " -o, --output 	FILE	Specify output file"
 	echo
 }
 
 # Varibales
+OUTPUT="/dev/stdout"
 
 # Parse options
 while :; do
@@ -21,6 +22,12 @@ while :; do
 			exit ;;
 		-v | --verbose)
 			set -xv ;;
+		-o | --output)
+			OUTPUT="$2"
+			if [[ -z "$2" ]]; then
+				echo "No output file specified :3" >&2
+				exit 1
+			fi;;
 		--)
 			shift
 			break ;;
@@ -32,17 +39,10 @@ while :; do
 	shift
 done
 
-
+# Check arguments
+# Execute
 awk '
-BEGIN {}
 /frequency\ \ /
-{
-	nr[NR];
-	nr[NR+6];
-}
-NR in nr
-END {
-	print "Vibrational Frequency  IR Intensity"
-	print "==================================="
-}' force.out
+' force.out > $OUTPUT
+
 # END {print; nr[NR+6]; next}; NR in nr' force.out
