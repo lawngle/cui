@@ -34,11 +34,13 @@ done
 
 
 awk '
-BEGIN {xx = 0; yy = 0;/frequency/ {print} }
-
+BEGIN {}
+/frequency\ \ /
 {
+	nr[NR];
+	nr[NR+6];
 }
-
+NR in nr
 END {
 	print "Vibrational Frequency  IR Intensity"
 	print "==================================="
