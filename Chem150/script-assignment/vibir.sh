@@ -34,9 +34,13 @@ done
 
 
 awk '
-BEGIN {print "Vibrational Frequency  IR Intensity"}
+BEGIN {xx = 0; yy = 0;/frequency/ {print} }
+
 {
-	
 }
-END {}' force.out
+
+END {
+	print "Vibrational Frequency  IR Intensity"
+	print "==================================="
+}' force.out
 # END {print; nr[NR+6]; next}; NR in nr' force.out
