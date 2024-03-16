@@ -65,11 +65,80 @@ Locate all the bound currents, and calculate the field they produce.
 	J_b & = \nabla \times M \hat{z} \\
 	& = - \frac{\partial}{\partial s} k s \hat{\phi} \\
 	& = - k \hat{\phi} \\
-	K_b & = M \hat{z} \times \hat{n}
+	K_b & = M \hat{z} \times \hat{n} \\
+	& = k s \hat{\phi} \\
+	& = k R \hat{\phi}
+\end{split}
+\end{equation*}
+
+When $s < R$:
+\begin{equation*}
+\begin{split}
+	\int B \cdot dl & = \mu_0 (\int J_b da + \int K_b dl) \\
+	B l & = \mu_0 (- k l [R - s] + k l R) \\
+	B & = \boxed{\mu_0 k s \hat{z}}
+\end{split}
+\end{equation*}
+
+When $s > R$:
+\begin{equation*}
+\begin{split}
+	\int B \cdot dl & = \mu_0 (\int J_b da + \int K_b dl) \\
+	B & = \boxed{0}
 \end{split}
 \end{equation*}
 
 \textbf{(b)}
 Use Ampere's law to find $H$, and then get $B$.
+
+$H = 0$ since there is no free current anywhere.
+
+When $s < R$:
+\begin{equation*}
+\begin{split}
+	B & = \mu_0 M \\
+	& = \boxed{\mu_0 k s \hat{z}}
+\end{split}
+\end{equation*}
+
+When $s < R$:
+\begin{equation*}
+\begin{split}
+	M & = 0 \\
+	B & = \boxed{0}
+\end{split}
+\end{equation*}
+
+\textbf{Problem 6.16}
+A coaxial cable consists of two very long cylindrical tubes, separated by linear insulating material of magnetic susceptibility $\chi_m$.
+A current $I$ flows down the inner conductor and returns along the outer one; in each case, the current distributes itself uniformly over the surface.
+Find the magnetic field in the region between the tubes.
+As a check, calculate the magnetization and the bound currents, and confirm that (together, of course, with the free currents) they generate the correct field.
+
+\begin{equation*}
+\begin{split}
+	\int H \cdot dl & = I \\
+	H & = \frac{I}{2 \pi s} \\
+	B & = \mu H \\
+	& = \boxed{\mu_0 (1 + \chi_m) \frac{I}{2 \pi s}}
+\end{split}
+\end{equation*}
+
+Check:
+\begin{equation*}
+\begin{split}
+	M & = \chi_m H \\
+	& = \chi_m I \frac{1}{2 \pi s} \hat{\phi} \\
+	J_b & = \nabla \times M \hat{\phi} \\
+	& = \frac{1}{s} \frac{\partial}{\partial s} [s \chi_m I \frac{1}{2 \pi s}] \hat{z} \\
+	& = 0 \\
+	K_b & = M \hat{\phi} \times \hat{n} \\
+	& = \chi_m I \frac{1}{2 \pi s} \hat{z} \\
+	& = \chi_m I \frac{1}{2 \pi a} \hat{z} \\
+	\int B \cdot dl & = \mu_0 (I + \int K_b dl) \\
+	B 2 \pi s & = \mu_0 (I + \chi_m I \frac{1}{2 \pi a} 2 \pi a) \\
+	B & = \mu_0 I (1 + \chi_m) \frac{1}{2 \pi s}
+\end{split}
+\end{equation*}
 
 \end{document}
