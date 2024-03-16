@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Homework 10}
+\author{Physics 112A}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Problem 6.8}
+A very long circular cylinder of radius $R$ carries a magnetization $M = k s^2 \hat{\phi}$, where $k$ is a constant.
+Find the magnetic field due to $M$, for points inside and outside the cylinder (and far from the ends).
+
+\begin{equation*}
+\begin{split}
+	J_b & = \nabla \times M \hat{\phi} \\
+	& = \frac{1}{s} \frac{\partial}{\partial s} [s k s^2] \hat{z} \\
+	& = 3 k s \hat{z} \\
+	K_b & = M \hat{\phi} \times \hat{n} \\
+	& = - k s^2 \hat{z} \\
+	& = - k R^2 \hat{z}
+\end{split}
+\end{equation*}
+
+When $s < R$:
+\begin{equation*}
+\begin{split}
+	\int B \cdot dl & = \mu_0 \int_0^s J_b da \\
+	B 2 \pi s & = \mu_0 \int_0^s 3 k s 2 \pi s ds \\
+	B & = \frac{3 \mu_0 k}{s} [\frac{1}{3} s^3]_0^s \\
+	& = \boxed{\mu_0 k s^2 \hat{\phi}}
+\end{split}
+\end{equation*}
+
+When $s > R$:
+\begin{equation*}
+\begin{split}
+	\int B \cdot dl & = \mu_0 (\int_0^R J_b da + \int_0^R K_b dl) \\
+	B 2 \pi s & = \mu_0 (\int_0^R 3ks 2 \pi s ds + \int_0^R - k R^2 2 \pi ds) \\
+	& = \mu_0 (2 \pi k R^3 - 2 \pi k R^2 [s]_0^R) \\
+	B & = \boxed{0}
+\end{split}
+\end{equation*}
+
+\textbf{Problem 6.10}
+An iron rod of length $L$ and square cross section (side length $a$) is given a uniform longitudinal magnetization $M$, and then bent around into a circle with a narrow gap (width $w$).
+Find the magnetic field at the center of the gap, assuming $w << a << L$.
+[Hint: Treat it as the superposition of a complete torus plus a square loop with revered current.]
+
+\textbf{RETURN LATER}
+
+\textbf{Problem 6.12}
+An infinitely long cylinder, of radius $R$, carries a "frozen-in" magnetization, parallel to the axis,
+$$M = ks \hat{z}$$
+where $k$ is a constant and $s$ is the distance from the axis; there is no free current anywhere.
+Find the magnetic field inside and outside the cylinder by two different methods:
+
+\textbf{(a)}
+Locate all the bound currents, and calculate the field they produce.
+
+\begin{equation*}
+\begin{split}
+	J_b & = \nabla \times M \hat{z} \\
+	& = - \frac{\partial}{\partial s} k s \hat{\phi} \\
+	& = - k \hat{\phi} \\
+	K_b & = M \hat{z} \times \hat{n}
+\end{split}
+\end{equation*}
+
+\textbf{(b)}
+Use Ampere's law to find $H$, and then get $B$.
+
+\end{document}
