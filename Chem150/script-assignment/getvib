@@ -1,0 +1,83 @@
+#! /bin/bash
+# Purpose: Report nonzero vib. frequencies and their IR intensities
+
+# Help
+help() {
+	echo "Usage: vibir [OPTION]..."
+	echo
+	echo " -h, --help		Display this help message"
+	echo " -v, --verbose		Enable debug output"
+	echo " -o, --output 	FILE	Specify output file"
+	echo " -i, --input 	FILE	Specify input file"
+	echo
+}
+
+# Varibales
+OUTPUT="/dev/stdout"
+INPUT="/dev/stdin"
+
+# Parse options
+while :; do
+	case $1 in
+		-h | --help)
+			help
+			exit ;;
+		-v | --verbose)
+			set -xv ;;
+		-o | --output)
+			OUTPUT="$2"
+			if [[ -z "$2" ]]; then
+				echo "No output file specified :3" >&2
+				exit 1
+			fi;;
+		-i | --input)
+			INPUT="$2"
+			if [[ -z "$2" ]]; then
+				echo "No input file specified :3" >&2
+				exit 1
+			fi;;
+		--)
+			shift
+			break ;;
+		-?*)
+			echo 'Unknown option (ignoring): ' "$1" >&2;;
+		*)
+			break ;;
+	esac
+	shift
+done
+
+# Check input
+if [[ -z "$1" && ! -p $INPUT ]]; then
+	echo "No input supplied" >&2
+	exit 1
+fi
+
+# Execute
+awk '
+BEGIN {format = "%-12s %s \n"}
+
+/frequency\ \ / {
+	$1 = "";
+	freq = (NR == 1 ? freq:freq " ")$0;
+	split(freq, frequency, " ");
+}
+
+/km\/mol/ {
+	$1 = ""; $2 = "";
+	inte = (NR == 1 ? inte:inte " ")$0;
+	split(inte, intensity, " ");
+} 
+
+{
+	for (i in frequency) {
+		if (frequency[i] != 0.00) next;
+		delete frequency[i]
+		delete intensity[i]
+	}
+}
+
+END {
+	printf format, "Frequency", "Intensity";
+	for (i in frequency) { printf format, frequency[i], intensity[i] }
+}' $INPUT > $OUTPUT
